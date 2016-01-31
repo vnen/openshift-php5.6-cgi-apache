@@ -47,6 +47,7 @@ function install_php() {
             --with-gettext \
             --with-readline \
             --with-kerberos \
+            --with-pcre-regex \
             --disable-debug \
             --enable-cli \
             --enable-inline-optimization \
@@ -64,7 +65,8 @@ function install_php() {
             --enable-sysvsem \
             --enable-sysvshm \
             --enable-sysvmsg \
-            --enable-opcache
+            --enable-opcache \
+            --enable-intl
 	make
 	make install
 	
